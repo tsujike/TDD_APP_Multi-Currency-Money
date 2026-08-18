@@ -3,5 +3,5 @@ class Dollar:
         self.amount = amount
 
     def times(self, multiplier: int):
-        # 第1章の「仮実装」: テストを通すためだけに10をセットする
-        self.amount = 10
+        # 重複を除去: 10 は 5 * 2 であり、それは amount * multiplier である
+        self.amount *= multiplier
